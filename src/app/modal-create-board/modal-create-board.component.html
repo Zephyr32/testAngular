@@ -1,0 +1,14 @@
+<div class="modal">
+    <div class="modal-window">
+        <button class="closebutton" (click)="closeWindow()">x</button>
+        <span class="modal-header">Создание Доски</span>
+        <div>
+            <label for="nameBoard">Введите название доски</label>
+            <div>
+                <input type="text" name="nameBoard" [(ngModel)]="nameBoard" (input)="changeText()" id="nameBoard">
+                <button class="button" [ngClass]="{ 'disabled' : isEmpty }" [disabled]="isEmpty" (click)="createBoard()">Create</button>
+            </div>
+        </div>
+
+    </div>
+</div>

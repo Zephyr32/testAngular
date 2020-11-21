@@ -1,0 +1,136 @@
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  #psd {
+    /* Позиционируем макет */
+    display: none;
+	position: absolute;
+    top: 0;
+    width: 100%;
+	/*left: 50%;*/
+	/*margin: 0 0 0 -640px;*/
+
+	/* Делаем его полупрозрачным */
+	opacity: .5;
+
+	/* Оставляем возможность взаимодействия с элементами */
+	pointer-events: none;
+
+	/* Инвертируем изображение в вашем любимом -webkit (-blink) браузере */
+	-webkit-filter: invert(100%);
+	}
+body:hover #psd {
+	/* Прячем картинку при наведении */
+	opacity: 0;
+	}
+.head{
+    padding-top: 5px;
+   display: flex;
+   border-bottom: 2px solid black;
+}
+.headtext{
+    font-size: x-large;
+    font-weight: 600;
+    margin-bottom: 15px;    
+}
+input,label{display: block;}
+input{
+    width: 425px;
+}
+* {
+box-sizing: border-box;
+}
+.row{
+display: flex;
+flex-flow: row nowrap;
+align-items: center;
+align-content: center;
+justify-content: space-between;
+}
+.col-7{
+padding-left: 0px;
+}
+.card-container-menu{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.container-button{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+.select-board{
+    width: 150px;
+    outline: none;  
+    cursor: pointer;
+}
+
+
+
+/* NEW CLASS */
+.nav-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.menu-side-block{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+.form{
+    display: flex;
+}
+.form select{
+    height: 30px;
+    width: 150px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 35px;
+}
+.content button{
+    padding: 5px 25px;
+    font-size: 16px;
+    border-radius: 6px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    outline: none;
+}
+.blueBut{
+    background-color: rgb(37, 142, 212);
+    color: white;
+    border: 1px solid rgb(37, 142, 212);
+    margin-left: 35px;
+}
+.blueBut:hover{
+    background-color: rgb(18, 105, 163);
+}
+.whiteBut{
+    background-color: white;
+    color: rgb(37, 142, 212);
+    border: 1px solid rgb(37, 142, 212);
+}
+.whiteBut:hover{
+    background-color: rgb(18, 105, 163);
+    color: white;
+}
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+  /* Responsive Styles */
+  @media screen and (max-width: 767px) {
+
+   
+  }
