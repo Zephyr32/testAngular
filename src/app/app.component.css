@@ -6,28 +6,90 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  #psd {
-    /* Позиционируем макет */
-    display: none;
-	position: absolute;
-    top: 0;
-    width: 100%;
-	/*left: 50%;*/
-	/*margin: 0 0 0 -640px;*/
 
-	/* Делаем его полупрозрачным */
-	opacity: .5;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+  }
 
-	/* Оставляем возможность взаимодействия с элементами */
-	pointer-events: none;
+  p {
+    margin: 0;
+  }
 
-	/* Инвертируем изображение в вашем любимом -webkit (-blink) браузере */
-	-webkit-filter: invert(100%);
-	}
-body:hover #psd {
-	/* Прячем картинку при наведении */
-	opacity: 0;
-	}
+  .spacer {
+    flex: 1;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .fldir-cm {
+    flex-direction: column;
+  }
+
+
+  .content {
+    margin: 60px auto 32px;
+    padding: 0 16px;
+    padding-left: 35px;
+    max-width: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top: 16px;
+  }
+
+  .left-imput {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 16px;
+  }
+
+  .cards-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 55px;
+  }
+
+  .card {
+    margin: 0 35px 52px -1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+  }
+
+  .card img {
+    height: 115px;
+    width: 205px;
+  }
+
+  .card-container .card:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .card-container input,
+  button {
+    border-radius: 4px;
+  }
+
 .head{
     padding-top: 5px;
    display: flex;
